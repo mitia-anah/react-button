@@ -1,12 +1,25 @@
 import React from 'react'
 
 function Button(props) {
-    return ( <
-        div className = "button-item" >
-        <
-        label > { props.label } < /label> <
-        button className = { props.class } > { props.text } < /button> < /
-        div >
+    const defaultButton = props.default ? "default-button" : " ";
+    const variantOutline = props.variant === "outline" ? "outline" : " ";
+    const variantText = props.variant === "text" ? "variant-text" : " ";
+    const disableShadow = props.disableShadow ? "disable-shadow" : " ";
+    const disabledButton = props.disabled === "disabled" ? " disabled-btn" : " ";
+    return (
+        <div className="button-item">
+            <p>{props.paragraph}</p>
+
+            <button className={`
+                ${defaultButton}
+                ${variantOutline}
+                ${variantText}
+                ${disableShadow}
+                ${disabledButton}
+            `}
+
+            >{props.children}</button>
+        </div>
     )
 }
 
