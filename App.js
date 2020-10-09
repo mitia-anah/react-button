@@ -5,63 +5,65 @@ import Button from './Button'
 
 function App() {
     return ( <
-        div className = "button-list" >
+        div >
         <
         div className = "wrapper" >
         <
-        Button className = "button"
-        paragraph = "<Button/>"
+        Button class = "btn origin"
+        label = "<Button/>"
         text = "Default" / >
         <
-        Button paragraph = "&:hover , &:focus"
+        Button class = "btn origin-hover"
+        label = "&:hover , &:focus"
         text = "Default" / >
         <
         /div> <
         div className = "wrapper" >
         <
-        Button className = ""
-        paragraph = "<Button/>"
+        Button class = "btn variant-outline"
+        label = "<Button variant=`outline`"
         text = "Default" / >
         <
-        Button paragraph = "<Button variant=`outline`"
-        text = "Default" / >
-        <
-        /div> <
-        div className = "wrapper" >
-        <
-        Button className = ""
-        style = { origin }
-        paragraph = "<Button/>"
-        text = "Default" / >
-        <
-        Button paragraph = "&:hover , &:focus"
+        Button class = "btn variant-hover"
+        label = "&:hover , &:focus"
         text = "Default" / >
         <
         /div> <
         div className = "wrapper" >
         <
-        Button paragraph = "<Button/>"
+        Button class = "btn text"
+        label = "<Button variant:`text`/>"
         text = "Default" / >
         <
-        Button paragraph = "<Button variant=`outline`"
-        text = "Default" / >
-        <
-        /div> <
-        div className = "wrapper" >
-        <
-        Button paragraph = "<Button/>"
-        text = "Default" / >
-        <
-        Button paragraph = "&:hover , &:focus"
+        Button class = "btn text-hover"
+        label = "&:hover , &:focus"
         text = "Default" / >
         <
         /div> <
         div className = "wrapper" >
         <
-        Button paragraph = "<Button/>"
+        Button class = "btn disable-shadow"
+        label = "<Button disableShadow/>"
         text = "Default" / >
         <
-        Button paragraph = "<Button variant=`outline`"
+        /div> <
+        div className = "wrapper" >
+        <
+        Button class = "btn disabled"
+        label = "<Button disabled/>"
+        text = "Default" / >
+        <
+        Button class = "btn disable-hover"
+        label = "<button variant=`text` disabled"
+        text = "Default" / >
+        <
+        /div> <
+        div className = "wrapper" >
+        <
+        Button label = "<Button/>"
+        text = "Default" / >
+        <
+        Button label = "<Button variant=`outline`"
         text = "Default" / >
         <
         /div> < /

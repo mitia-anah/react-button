@@ -4,8 +4,8 @@ function Button(props) {
     return ( <
         div className = "button-item" >
         <
-        p > { props.paragraph } < /p> <
-        button className = 'button' > { props.text } < /button> < /
+        label > { props.label } < /label> <
+        button className = { props.class } > { props.text } < /button> < /
         div >
     )
 }
