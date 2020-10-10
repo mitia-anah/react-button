@@ -1,9 +1,11 @@
+body {
+    padding: 1rem;
+}
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
-
 .wrapper p {
     display: flex;
 }
@@ -45,15 +47,66 @@ button,
     color: #3D5AFE;
 }
 
+.primary,
+.small-button,
+.medium-button,
+.large-button,
+.button-with-icon,
 .disable-shadow {
     background-color: #3D5AFE;
     color: #ffffff;
 }
 
-.disabled-btn {
-    background-color: #E0E0E0;
-    color: #9E9E9E;
+.disabled-button {
+    color: #AEAEAE;
 }
-.disabled-btn:disabled {
-    color:  #9E9E9E;
+
+.text-disabled:disabled {
+    background: #ffffff;
+    color: #AEAEAE;
+}
+
+svg {
+    width: 14px;
+}
+
+.small-button{
+    width: 73px;
+}
+
+.danger,
+.primary,
+.default,
+.medium-button {
+    width: 81px;
+}
+.large-button {
+    width: 93px;
+} 
+
+.default {
+    background: #E0E0E0;
+    color: #000000;
+}
+.default:hover {
+    background: #AEAEAE;
+}
+.primary:hover {
+    background: #0039CB;
+}
+
+.secondary{
+    width: 104px;
+    background-color: #455A64;
+    color: #ffffff;
+}
+.secondary:hover {
+    background: #1C313A;
+}
+
+.danger {
+    background: #D32F2F;
+}
+.danger:hover {
+    background: #9A0007;
 }
