@@ -19,8 +19,6 @@ function Button(props) {
     const secondaryBtn = props.color === "secondary" ? "secondary" : "";
     const dangerBtn = props.color === "danger" ? "danger" : "";
 
-
-
     return (
         <div className="button-item">
             <p>{props.paragraph}</p>
